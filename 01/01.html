@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 페이지 실습</title>
+  <link rel="stylesheet" href="01.css">
+</head>
+<body>
+  <div>
+    <h1>나의 첫 웹 페이지</h1>
+    <p>이름을 입력하세요.</p>
+    <form>
+      <input type="text" placeholder="이름" />
+      <button onClick="handleClickBtn()" type="button">인사하기</button>
+    </form>
+  </div>
+
+  <script>
+    const p = document.querySelector("p");
+    const name = document.querySelector("input");
+    const btn = document.querySelector("button");
+
+    function handleClickBtn()
+    {
+      e.preventDefault()
+      p.innerText = name.value !== "" ? `안녕하세요, ${name.value}님` : "이름을 입력해주세요!";
+      name.value = "";
+    }
+  </script>
+</body>
+</html>

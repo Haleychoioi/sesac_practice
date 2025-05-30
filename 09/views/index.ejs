@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Form Practice</title>
+</head>
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <form method="get" action="/getForm">
+    <label for="userName">이름</label>
+    <input name="userName" type="text">
+    
+    <fieldset>
+      <legend>성별</legend>
+      <label for="male">남자</label>
+      <input id="male" value="male" name="gender" type="radio">
+      <label for="female">여자</label>
+      <input id="female" value="female" name="gender" type="radio">
+    </fieldset>
+
+    <fieldset>
+      <legend>생년월일</legend>
+      <label for="year">년</label>
+      <input id="year" name="year" type="number"/>
+      <label for="month">월</label>
+      <input id="month" name="month" type="number"/>
+      <label for="day">일</label>
+      <input id="day" name="day" type="number"/>
+    </fieldset>
+
+    <fieldset>
+      <legend>관심사</legend>
+      <label for="trip">여행</label>
+      <input id="trip" value="trip" name="interest" type="checkbox">
+      <label for="fashion">패션</label>
+      <input id="fashion" value="fashion" name="interest" type="checkbox">
+      <label for="food">음식</label>
+      <input id="food" value="food" name="interest" type="checkbox">
+    </fieldset>
+  <br/>
+    <button type="submit">회원가입</button>
+  </form>
+</body>
+</html>

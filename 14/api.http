@@ -1,0 +1,7 @@
+
+
+### get
+GET http://localhost:8080/api/goods HTTP/1.1
+
+### post
+POST http://localhost:8080/api/goods HTTP/1.1

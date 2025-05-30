@@ -1,0 +1,18 @@
+
+
+### get
+GET http://localhost:3000/users
+
+### post
+POST http://localhost:3000/users 
+Content-Type: application/json; charset=UTF-8
+
+{
+  "id": 6
+}
+
+### get
+GET http://localhost:3000/users/3
+
+### delete
+DELETE  http://localhost:3000/users/3

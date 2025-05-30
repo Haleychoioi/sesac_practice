@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>구글 폼 클론 - 기본 구조</title>
+  <link rel="stylesheet" href="02.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>구글 폼 클론 - 사용자 설문지</h1>
+      <form action="#" onsubmit="handleSubmit(event)">
+        <div class="container">
+          <label for="username">이름: </label><br />
+          <input type="text" id="username" name="username" required placeholder="이름을 입력하세요.">
+        </div>
+    
+        <div class="container">
+          <label for="email">이메일: </label><br />
+          <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+        </div>
+
+        <div class="container">
+          <label for="tel">전화번호: </label><br />
+          <input type="tel" id="tel" name="tel" required placeholder="010-1234-5678">
+        </div>
+    
+        <div class="container">
+          <label for="gender">성별: </label><br />
+          <select id="gender" name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+          </select>
+        </div>
+    
+        <div class="container">
+          <label for="agree">이용 약관에 동의: </label>
+          <input type="checkbox" id="agree" name="agree">
+        </div>
+    
+        <button type="submit" id="submit">제출하기</button>
+        <button type="button">추가 질문 추가</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const name = document.querySelector("#username");
+    const email = document.querySelector("#email");
+    const agree = document.querySelector("#agree");
+
+    function handleSubmit(e)
+    {
+      e.preventDefault();
+      if(!agree.checked)
+      {
+        alert("이용 약관에 동의 후 제출 가능합니다.");
+      } else
+      {
+        alert(`설문지 제출 완료!\n이름: ${name.value}\n이메일: ${email.value}`);
+      }
+    }
+  </script>
+</body>
+</html>
