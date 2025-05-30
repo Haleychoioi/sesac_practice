@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 
-const users = [1,2,3,4,5]
+const users = require("./user")
 
 router.get("/", (req, res) => {
   const tempRes = []
