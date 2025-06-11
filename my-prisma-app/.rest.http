@@ -1,0 +1,8 @@
+###
+
+GET http://localhost:4000/user
+Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiLtmY3quLjrj5kiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0OTYzMzY2MCwiZXhwIjoxNzQ5NjMzNjY1fQ.g4ggh8eOLAa-eMhhzqqmvb6qweUGU5ZzFhY29IeWAyA
+// Bearer 이게 어떻게 생긴 것인지, 어떤 종류의 토큰인지 보여줌
+
+###
+GET http://localhost:4000/login
